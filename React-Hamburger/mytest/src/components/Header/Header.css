@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #262626;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    padding-inline: 30px;
+}
+
+.burger-bar{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+}
+
+.menu{
+    width: 50%;
+    height: 50vh;
+    background-color: aqua;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: inherit;
+}
+
+.burger-bar.clicked:nth-child(1){
+    transform: rotate(45deg) translateY(11px);
+}
+.burger-bar.clicked:nth-child(2){
+    transform: scale(0.1)
+}
+.burger-bar.clicked:nth-child(3){
+    transform: rotate(-45deg) translateY(-11px);
+}
+
+
+
